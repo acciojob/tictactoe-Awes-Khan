@@ -67,9 +67,9 @@ function switchPlayer() {
 
 function updateMessage(isWinner = false) {
     if (isWinner) {
-        messageDiv.textContent = `${(currentPlayer === player1Name) ? player2Name : player1Name} congratulations you won!`;
+        messageDiv.textContent = `${(currentPlayer === player1Name) ? player1Name : player2Name} congratulations you won!`;
     } else {
-        messageDiv.textContent = `${(currentPlayer === player1Name) ? player2Name : player1Name} you're up!`;
+        messageDiv.textContent = `${(currentPlayer === player1Name) ? player1Name : player2Name} you're up!`;
     }
 }
 
