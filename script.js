@@ -62,7 +62,7 @@ function handleCellClick(e) {
 
 function switchPlayer() {
     currentPlayer = (currentPlayer === player1Name) ? player2Name : player1Name;
-    currentPlayerSymbol = (currentPlayerSymbol === 'x') ? 'O' : 'x';
+    currentPlayerSymbol = (currentPlayerSymbol === 'x') ? 'o' : 'x';
 }
 
 function updateMessage(isWinner = false) {
