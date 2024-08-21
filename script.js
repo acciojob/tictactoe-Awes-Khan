@@ -15,8 +15,8 @@ let gameState = ['', '', '', '', '', '', '', '', ''];
 let currentPlayerSymbol = 'X';
 
 submitBtn.addEventListener('click', () => {
-    player1Name = document.getElementById('player-1').value;
-    player2Name = document.getElementById('player-2').value;
+    player1Name = document.getElementById('player1').value;
+    player2Name = document.getElementById('player2').value;
     if (player1Name === '' || player2Name === '') {
         alert('Please enter names for both players');
         return;
