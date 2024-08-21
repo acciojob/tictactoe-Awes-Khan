@@ -12,7 +12,7 @@ let player2Name = '';
 let currentPlayer = '';
 let gameActive = true;
 let gameState = ['', '', '', '', '', '', '', '', ''];
-let currentPlayerSymbol = 'X';
+let currentPlayerSymbol = 'x';
 
 submitBtn.addEventListener('click', () => {
     player1Name = document.getElementById('player1').value;
@@ -62,14 +62,12 @@ function handleCellClick(e) {
 
 function switchPlayer() {
     currentPlayer = (currentPlayer === player1Name) ? player2Name : player1Name;
-    currentPlayerSymbol = (currentPlayerSymbol === 'X') ? 'O' : 'X';
+    currentPlayerSymbol = (currentPlayerSymbol === 'x') ? 'O' : 'x';
 }
 
 function updateMessage(isWinner = false) {
     if (isWinner) {
-        messageDiv.textContent = `${currentPlayer}, congratulations you won!`;
-    } else {
-        messageDiv.textContent = `${currentPlayer}, you're up!`;
+        messageDiv.textContent = `${(currentPlayer === player1Name) ? player2Name : player1Name} congratulations you won!`;
     }
 }
 
